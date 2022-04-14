@@ -12,7 +12,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v1
       - name: Build and Run Test
-        run: ls "${GITHUB_WORKSPACE}/TestScripts"
+        run: chmod +x "${GITHUB_WORKSPACE}/TestScripts/SampleTest"
       - name: Publish Test Report
         uses: mikepenz/action-junit-report@v3
         if: always() # always run even if the previous step fails
