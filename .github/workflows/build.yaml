@@ -10,7 +10,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v1
       - name: Build and Run Tests
-        run:  ls "${GITHUB_WORKSPACE}/.Test2/TestScripts/SampleTest.sh
+        run:  ls "${GITHUB_WORKSPACE}/Test2/TestScripts/SampleTest.sh
 	      shell: bash	
       - name: Publish Test Report
         uses: mikepenz/action-junit-report@v3
