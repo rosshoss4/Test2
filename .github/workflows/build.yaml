@@ -10,7 +10,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v1
       - name: Build and Run Tests
-        run: ls /home/runner/work/{rosshoss4}/{Test2}/.github/
+        run: ls /home/runner/work/rosshoss4/Test2/.github/
 	      shell: bash	
       - name: Publish Test Report
         uses: mikepenz/action-junit-report@v3
