@@ -20,7 +20,6 @@ jobs:
             java-version: '11.0.0'
             architecture: x64  
       - run: java -cp java HelloWorldApp
-      - run: java -cp java HelloWorldApp
       - name: Build and Run Test
         run: |
           chmod +x "${GITHUB_WORKSPACE}/TestScripts/SampleTest.sh"
