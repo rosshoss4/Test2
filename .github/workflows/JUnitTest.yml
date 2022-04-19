@@ -17,7 +17,7 @@ jobs:
           java-version: '4.0.0'
           architecture: x64
           jdkFile: "${GITHUB_WORKSPACE}/TestScripts/App2.java # Optional - jdkFile to install java from. Useful for versions not found on Zulu Community CDN
-      - run: java -cp java HelloWorldApp
+      - run: java -cp java App2.java
       - name: Build and Run Test
         run: |
           chmod +x "${GITHUB_WORKSPACE}/TestScripts/SampleTest.sh"
