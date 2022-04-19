@@ -14,9 +14,9 @@ jobs:
       - uses: actions/checkout@v2
       - uses: joschi/setup-jdk@v2
         with:
-          java-version: '17.0.0'
+          java-version: '4.0.0'
           architecture: x64
-          jdkFile: "${GITHUB_WORKSPACE}/TestScripts/App2.java"
+          jdkFile: "${GITHUB_WORKSPACE}/TestScripts/App2"
       - run: java -cp java App2
       - name: Build and Run Test
         run: |
