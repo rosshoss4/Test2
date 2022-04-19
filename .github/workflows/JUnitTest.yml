@@ -15,7 +15,7 @@ jobs:
       - uses: joschi/setup-jdk@v2
         with:
           java-version: '11.0.0'
-          architecture: x64
+          architecture: 'x64'
       - run: java -cp java App2.java
       - name: Build and Run Test
         run: |
