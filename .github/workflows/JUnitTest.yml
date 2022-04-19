@@ -12,10 +12,13 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v3
       - uses: actions/checkout@v2
-      - uses: joschi/setup-jdk@v2
-        with:
-          java-version: '11.0.0'
-          architecture: 'x64'
+
+      - name: Set up JDK 1.8
+        uses: joschi/setup-jdk@v2
+
+      - name: Build with Gradle
+        run: gradle build
+        
       - run: java -cp java App2.java
       - name: Build and Run Test
         run: |
